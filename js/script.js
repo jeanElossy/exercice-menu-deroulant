@@ -1,20 +1,15 @@
-const btnOpen = document.querySelector(".open__close__btn");
+const btnOpenClose = document.querySelector(".open__close__btn");
 
-btnOpen.addEventListener("click", Open, false);
-function Open(){
-  btnOpen.classList.add("open");
-  document.querySelector("nav").style.width = "18%";
-  document.querySelectorAll(".title").forEach(element => element.style.visibility = "visible");
-  document.querySelectorAll("li a").forEach(link => link.style.width = "230px");
-  document.querySelector(".fa-angle-double-right").style.transform = "rotate(180deg)";
+
+btnOpenClose.addEventListener("click", OpenClose);
+
+function OpenClose(){
+  btnOpenClose.classList.toggle("open__close");
+  document.querySelector("nav").classList.toggle("nav");
+  document.querySelectorAll(".title").forEach(element => element.classList.toggle("title__return"));
+  document.querySelectorAll("li a").forEach(link => link.style.width = "245px");
+  document.querySelector(".fa-angle-double-right").classList.toggle("rotate__icon");
 }
 
-// btnOpen.addEventListener("click", Close, false);
-// function Close(){
-//   btnOpen.removeEventListener("click",Open, false);
-//   document.querySelector("nav").style.width = "6%";
-//   document.querySelectorAll(".title").forEach(element => element.style.visibility = "hidden");
-//   document.querySelectorAll("li a").forEach(link => link.style.width = "70px");
-// }
 
 

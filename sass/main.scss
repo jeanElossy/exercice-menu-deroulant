@@ -29,12 +29,12 @@ nav{
   border-right: 5px solid $color--selection;
   border-radius: 15px 0px 0px 15px;
   position: relative;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   ul{
     position: absolute;
-    top: 6%;
+    top: 7.5%;
     left: 5%;
-    transform: translate(-10%);
+    transform: translate(-9%);
     gap: 10px;
     li{
       list-style: none;
@@ -42,7 +42,9 @@ nav{
       height: 50px;
       padding: 1.1rem;
       margin: 0px 7px 10px; 
+        
       a{
+        
         text-decoration: none;
         display: flex;
         color: $color--icons;
@@ -72,7 +74,8 @@ nav{
   margin-bottom: 5px;
   position: absolute;
   bottom: 0;
-  left: 14%;
+  left: 18%;
+  transition: 0.2s ease;
   .fa-angle-double-right{
     color: $color--icons;
   }
@@ -80,17 +83,31 @@ nav{
 .title{
   visibility: hidden;
 }
-.open{
+.open__close{
   transition: all .3s;
   transform: translate(350%);
 }
 li a:focus{
   background: $color--selection;
-  width: 80px;
+  width: 75px;
   border-radius: 12px 0px 0px 12px;
   height: 45px;
   padding-top: 0.8rem;
 }
-.fa-angle-double-right{
-  transition: 0.4s ease;
+.nav{
+  width: 19%;
+  transition: 0.3s ease;
 }
+.title__return{
+  visibility: visible;
+  transition: 0.5s ease;
+}
+.rotate__icon{
+  transform: rotate(180deg);
+}
+
+.width__selector{
+  width: 245px;
+}
+
+

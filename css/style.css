@@ -24,13 +24,13 @@ nav {
   border-right: 5px solid #c72c41;
   border-radius: 15px 0px 0px 15px;
   position: relative;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 nav ul {
   position: absolute;
-  top: 6%;
+  top: 7.5%;
   left: 5%;
-  transform: translate(-10%);
+  transform: translate(-9%);
   gap: 10px;
 }
 nav ul li {
@@ -68,7 +68,8 @@ nav ul li a i {
   margin-bottom: 5px;
   position: absolute;
   bottom: 0;
-  left: 14%;
+  left: 18%;
+  transition: 0.2s ease;
 }
 .open__close__btn .fa-angle-double-right {
   color: white;
@@ -78,21 +79,35 @@ nav ul li a i {
   visibility: hidden;
 }
 
-.open {
+.open__close {
   transition: all 0.3s;
   transform: translate(350%);
 }
 
 li a:focus {
   background: #c72c41;
-  width: 80px;
+  width: 75px;
   border-radius: 12px 0px 0px 12px;
   height: 45px;
   padding-top: 0.8rem;
 }
 
-.fa-angle-double-right {
-  transition: 0.4s ease;
+.nav {
+  width: 19%;
+  transition: 0.3s ease;
+}
+
+.title__return {
+  visibility: visible;
+  transition: 0.5s ease;
+}
+
+.rotate__icon {
+  transform: rotate(180deg);
+}
+
+.width__selector {
+  width: 245px;
 }
 
 /*# sourceMappingURL=style.css.map */
