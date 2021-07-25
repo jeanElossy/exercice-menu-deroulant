@@ -1,0 +1,96 @@
+$color--body: #2d142c;
+$color--nav: #510a32;
+$color--selection: #c72c41;
+$color--button: #801336;
+$color--icons:white;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: $color--body;
+}
+nav{
+  width: 6%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: $color--nav;
+  border-right: 5px solid $color--selection;
+  border-radius: 15px 0px 0px 15px;
+  position: relative;
+  transition: 0.3s ease;
+  ul{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    transform: translate(-10%);
+    gap: 10px;
+    li{
+      list-style: none;
+      width: 245px;
+      height: 50px;
+      padding: 1.1rem;
+      margin: 0px 7px 10px; 
+      a{
+        text-decoration: none;
+        display: flex;
+        color: $color--icons;
+        i{
+          color: $color--icons;
+          font-size: 1.3rem;
+          margin-left: 23px;
+        }
+      }
+    }
+  }
+}
+
+.home, .setting, .sign-out, .chat{
+  margin: 0px 40px 0px;
+}
+.contacts, .user{
+  margin: 0px 44px 0px;
+}
+
+.open__close__btn{
+  width: 45px;
+  height: 45px;
+  background-color: $color--button;
+  padding: 0.95rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 14%;
+  .fa-angle-double-right{
+    color: $color--icons;
+  }
+}
+.title{
+  visibility: hidden;
+}
+.open{
+  transition: all .3s;
+  transform: translate(350%);
+}
+li a:focus{
+  background: $color--selection;
+  width: 80px;
+  border-radius: 12px 0px 0px 12px;
+  height: 45px;
+  padding-top: 0.8rem;
+}
+.fa-angle-double-right{
+  transition: 0.4s ease;
+}
