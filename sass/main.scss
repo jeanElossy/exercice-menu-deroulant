@@ -21,8 +21,8 @@ body{
   background: $color--body;
 }
 nav{
-  width: 5%;
-  height: 450px;
+  width: 65px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   background: $color--nav;
@@ -34,15 +34,14 @@ nav{
   overflow: hidden;
   ul{
     position: absolute;
-    top: 7.5%;
-    left: 5%;
-    transform: translate(-9%);
+    top: 16px;
+    left: -16px;
     gap: 10px;
     li{
       list-style: none;
       height: 50px;
       padding: 1.1rem;
-      margin: 0px 7px 10px; 
+      margin: 0px 7px 0px; 
       a{
         text-decoration: none;
         display: flex;
@@ -72,42 +71,37 @@ nav{
   margin-bottom: 5px;
   position: absolute;
   bottom: 0;
-  left: 13%;
+  right: 5px;
   transition: 0.2s ease;
+  cursor: pointer;
   .fa-angle-double-right{
     color: $color--icons;
   }
 }
 .title{
-  visibility: hidden;
+  opacity: 0;
 }
 .open__close{
   transition: all .3s;
-  transform: translate(330%);
+}
+.link{
+  width: 60px;
+  height: 45px;
+  padding-top: 0.8rem;
 }
 .link:focus{
   background: $color--selection;
-  width: 60px;
   border-radius: 12px 0px 0px 12px;
-  height: 45px;
-  padding-top: 0.8rem;
-  
 }
 .nav{
-  width: 17%;
+  width: 250px;
   transition: 0.3s ease;
 }
 .title__return{
-  visibility: visible;
+  opacity: 1;
   transition: 0.5s ease;
 }
 .rotate__icon{
   transform: rotate(180deg);
 }
-
-.width__selector{
-  width: 220px;
-
-}
-
 
