@@ -1,8 +1,6 @@
 const btnOpenClose = document.querySelector(".open__close__btn");
 
-
 btnOpenClose.addEventListener("click", OpenClose);
-
 function OpenClose(){
   btnOpenClose.classList.toggle("open__close");
   document.querySelector("nav").classList.toggle("nav");
@@ -13,8 +11,9 @@ function OpenClose(){
 
 function widthSelector(){
   if(document.querySelector("nav").style.width === "6%"){
-    document.querySelectorAll("li a").forEach(link => link.style.width = "75px");
+    document.querySelectorAll(".link").forEach(link => link.style.width = "60px");
   }else{
-    document.querySelectorAll("li a").forEach(link => link.style.width = "245px");
+    document.querySelectorAll(".link").forEach(link => link.style.width = "220px");
   }
+  
 }

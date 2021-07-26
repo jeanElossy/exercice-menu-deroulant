@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  width: 6%;
+  width: 5%;
   height: 450px;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,8 @@ nav {
   border-radius: 15px 0px 0px 15px;
   position: relative;
   transition: 0.2s ease;
+  box-shadow: 3px 2px 7px 1px #111111;
+  overflow: hidden;
 }
 nav ul {
   position: absolute;
@@ -35,7 +37,6 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  width: 245px;
   height: 50px;
   padding: 1.1rem;
   margin: 0px 7px 10px;
@@ -48,7 +49,7 @@ nav ul li a {
 nav ul li a i {
   color: white;
   font-size: 1.3rem;
-  margin-left: 23px;
+  margin-left: 15px;
 }
 
 .home, .setting, .sign-out, .chat {
@@ -68,7 +69,7 @@ nav ul li a i {
   margin-bottom: 5px;
   position: absolute;
   bottom: 0;
-  left: 18%;
+  left: 13%;
   transition: 0.2s ease;
 }
 .open__close__btn .fa-angle-double-right {
@@ -81,19 +82,19 @@ nav ul li a i {
 
 .open__close {
   transition: all 0.3s;
-  transform: translate(350%);
+  transform: translate(330%);
 }
 
-li a:focus {
+.link:focus {
   background: #c72c41;
-  width: 75px;
+  width: 60px;
   border-radius: 12px 0px 0px 12px;
   height: 45px;
   padding-top: 0.8rem;
 }
 
 .nav {
-  width: 19%;
+  width: 17%;
   transition: 0.3s ease;
 }
 
@@ -107,7 +108,7 @@ li a:focus {
 }
 
 .width__selector {
-  width: 245px;
+  width: 220px;
 }
 
 /*# sourceMappingURL=style.css.map */
